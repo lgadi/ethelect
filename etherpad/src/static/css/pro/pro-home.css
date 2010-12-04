@@ -1,0 +1,98 @@
+
+#welcome-msg {
+  font-size: 1.2em;
+  color: #333;
+}
+
+#homeright {
+  width: 320px;
+  float: right;
+}
+
+#homeleft {
+  width: 548px;
+  float: left;
+}
+
+#homeleft-title {
+  font-weight: bold;
+  font-size: 1.0em;
+  margin-top: 1em;
+}
+
+.news-time-sep {
+  margin-top: 2em;
+}
+
+.news-time-sep .date {
+  float: left;
+  background: #fff;
+  padding-right: 1em;
+  color: #666;
+  font-size: .9em;
+}
+
+.news-time-sep .line {
+  height: .5em;
+  border-bottom: 1px solid #ccc;
+}
+
+.news-item {
+  padding: 0 2em 0 1em;
+  font-size: .86em;
+}
+
+/*--------------------------------------------------------------------------------
+ * recent pads
+ *--------------------------------------------------------------------------------*/
+
+#recent-pads #viewall {
+  display: block;
+  float: left;
+  margin: 0.8em 0;
+  font-size: 0.8em;
+}
+
+#homeright #padtable {
+  width: 100%;
+}
+
+#homeright h3 {
+  font-size: 1.0em;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+
+
+
+.bigbuttonpro {
+ display: block;
+ background-color: #a3bde0;
+ color: #555555;
+ border-style: solid;
+ border-width: 2px;
+ border-left-color: #d6e2f1;
+ border-right-color: #86aee1;
+ border-top-color: #d6e2f1;
+ border-bottom-color: #86aee1;
+ margin: 0pt;
+ text-align: center;
+ text-decoration: none;
+ padding: 30pt;
+ font-size: 20pt;
+ -moz-border-radius-topleft: 3pt;
+ -moz-border-radius-topright: 3pt;
+ -moz-border-radius-bottomleft: 3pt;
+ -moz-border-radius-bottomright: 3pt;
+ -webkit-border-top-left-radius: 3pt;
+ -webkit-border-top-right-radius: 3pt;
+ -webkit-border-bottom-left-radius: 3pt;
+ -webkit-border-bottom-right-radius: 3pt;
+}
+
+
+
+
+
+

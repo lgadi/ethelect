@@ -1,0 +1,52 @@
+<% /* 
+Copyright 2009 Google Inc.
+Copyright 2010 Pita, Peter Martischka <petermartischka@googlemail.com>
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. */ %>
+<%
+ template.inherit('browser.ejs');
+ helpers.setHtmlTitle("Search pads");
+ helpers.includeCss("plugins/twitterStyleTags/pad.css");
+
+ function inArray(item, arr) {
+   for (var i = 0; i < arr.length; i++)
+     if (arr[i] == item)
+       return true;
+   return false;
+ }
+%>
+<% template.define('docBarTitle', function() { var ejs_data=''; %>
+  <td id="docbarpadtitle"><span>Search pads</span></td>
+<% return ejs_data; }); %>
+
+<% template.define('queryResult', function() { var ejs_data=''; %>
+  <% for (i = 0; i < matchingPads.length; i++) { %>
+  <%
+       var matchingPadId = matchingPads[i].ID;
+       var matchingPadUrl = matchingPadId;
+       if (!inArray('writable', matchingPads[i].TAGS)) {
+	 matchingPadId = padIdToReadonly(matchingPads[i].ID);
+	 matchingPadUrl = 'ep/pad/view/' + matchingPadId + '/latest';
+       } else if (padutils.isProPadId(matchingPadId)) {
+         matchingPadId = padutils.globalToLocalId(matchingPadId);
+	 matchingPadUrl = matchingPadId;
+       }
+  %>
+   <dt><a href="/<%= matchingPadUrl %>"><%= matchingPadId %></a><dt>
+   <dd>
+    <% for (j = 0; j < matchingPads[i].TAGS.length; j++) { %>
+     <a href="<%= helpers.updateToUrl({query:tagQuery.tagsToQuery(tags.concat([matchingPads[i].TAGS[j]]), antiTags)}) %>" class="padtag" title="<%= matchingPads[i].TAGS[j] %> matches">#<%= matchingPads[i].TAGS[j] %></a>
+    <% } %>
+   </dd>
+  <% } %>
+<% return ejs_data; }); %>

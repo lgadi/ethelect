@@ -1,0 +1,25 @@
+{"type":"event","event":"connection-created","connection":"491662431042","date":1291127696948}
+{"type":"event","event":"connection-killed","connection":"491662431042","reason":"client request: Closed by client.","date":1291127712757}
+{"type":"event","event":"connection-created","connection":"585218602092","date":1291132578107}
+{"type":"event","event":"connection-created","connection":"282983148004","date":1291132754027}
+{"type":"event","event":"connection-created","connection":"901578991441","date":1291134090012}
+{"type":"event","event":"connection-created","connection":"398781611816","date":1291134225049}
+{"type":"event","event":"connection-killed","connection":"398781611816","reason":"client request: Closed by client.","date":1291134254561}
+{"type":"event","event":"connection-created","connection":"243931659962","date":1291134263151}
+{"type":"event","event":"connection-created","connection":"267995763570","date":1291134353097}
+{"type":"event","event":"connection-created","connection":"417450638953","date":1291134496750}
+{"type":"event","event":"connection-created","connection":"731566052418","date":1291134506870}
+{"type":"event","event":"connection-killed","connection":"417450638953","reason":"client request: Killed by server.","date":1291134507160}
+{"type":"event","event":"connection-created","connection":"732257717754","date":1291134515307}
+{"type":"event","event":"connection-killed","connection":"731566052418","reason":"client request: Killed by server.","date":1291134515863}
+{"type":"event","event":"connection-killed","connection":"732257717754","reason":"client request: Closed by client.","date":1291134519381}
+{"type":"event","event":"connection-created","connection":"203908552182","date":1291134519889}
+{"type":"event","event":"connection-killed","connection":"203908552182","reason":"client request: Closed by client.","date":1291134521463}
+{"type":"event","event":"connection-created","connection":"973112022504","date":1291134525613}
+{"type":"event","event":"connection-killed","connection":"973112022504","reason":"client request: Closed by client.","date":1291134527673}
+{"type":"event","event":"connection-created","connection":"509099900489","date":1291134531680}
+{"type":"event","event":"connection-created","connection":"605886128265","date":1291134702765}
+{"type":"event","event":"connection-killed","connection":"605886128265","reason":"client request: Closed by client.","date":1291134705497}
+{"type":"event","event":"connection-created","connection":"725254820659","date":1291134710615}
+{"type":"event","event":"connection-killed","connection":"725254820659","reason":"client request: Closed by client.","date":1291134713132}
+{"type":"event","event":"connection-created","connection":"363354129949","date":1291134721185}
