@@ -36,7 +36,7 @@ function cacheonfiles {
 	else
 		for a in $FILES; do
 			if [ $FILETEST -ot $a ]; then
-				echo $a has changed, rebuilding $NAME " $FILETEST $FILES "
+				echo $a has changed, rebuilding $NAME " $FILETEST $a "
 				REBUILD=1
 			fi
 		done

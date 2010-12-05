@@ -19,9 +19,8 @@ if [ -z "$JAR" ]; then
 else
     echo "using JAR $JAR..."
 fi
-
-cp ${MYSQL_CONNECTOR_JAR} lib/
-
+#added -p to preserve timestamp of file and avoid unnecessary rebuilds
+cp -p ${MYSQL_CONNECTOR_JAR} lib/
 source bin/compilecache.sh
 
 if [ "$1" == "clearcache" ]; then
