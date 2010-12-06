@@ -1,0 +1,4 @@
+Protocol: Operational Transformation
+	- http://code.google.com/p/google-mobwrite/wiki/Theory
+	- http://code.google.com/p/google-diff-match-patch/
+	- http://stackoverflow.com/questions/2043165/operational-transformation-library
