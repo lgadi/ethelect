@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Ethelect.com
+		</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="/static/site/css/welcome.css">
+		<script type="text/javascript" src="/static/site/jquery/jquery.js">
+</script>
+		<script type="text/javascript">
+		
+			
+			
+			var timeout    = 500;
+			var closetimer = 0;
+			var ddmenuitem = 0;
+
+			function jsddm_open()
+			{  jsddm_canceltimer();
+			   jsddm_close();
+			   ddmenuitem = $(this).find('ul').css('visibility', 'visible');}
+
+			function jsddm_close()
+			{  if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');}
+
+			function jsddm_timer()
+			{  closetimer = window.setTimeout(jsddm_close, timeout);}
+
+			function jsddm_canceltimer()
+			{  if(closetimer)
+			   {  window.clearTimeout(closetimer);
+			      closetimer = null;}}
+
+			$(document).ready(function()
+			{  $('#jsddm > li').bind('mouseover', jsddm_open)
+			   $('#jsddm > li').bind('mouseout',  jsddm_timer)});
+
+			document.onclick = jsddm_close;
+			
+
+		</script>
+	</head>
+	<body>
+	
+		<div class="ethelect_header" id="ethelect_header">
+			<h2>
+				Ethelect.com
+			</h2>
+		</div>
+		<hr id="header_stripe">
+		
+			
+	
+		
+		<div id="wrapper">
+		<div id="main_menu" class="main_menu">
+				<ul id="jsddm">
+				    <li><a href="#">My Notes</a>
+				        <ul>
+				            <li><a href="#">Browse Saved Notes</a></li>
+				            <li><a href="#">Upload Notes</a></li>
+				            <li><a href="#">Share Notes</a></li>
+				        </ul>
+				    </li>
+				    <li><a href="#">My Classes</a>
+				        <ul>
+				            <li><a href="#">Active Classes</a></li>
+				            <li><a href="#">Edit Class Schedule</a></li>
+				            <li><a href="#">Upcoming Exams</a></li>
+				     
+				        </ul>
+				    </li>
+				    <li><a href="#">My Friends</a>
+						<ul>
+							<li><a href="#">Friends List</a></li>
+							<li><a href="#">Find Friends</a></li>
+						</ul>
+					</li>
+				    <li><a href="#">Archive</a></li>
+				    <li><a href="#">Help</a></li>
+				</ul>
+		</div>
+		<div style="clear:both;"></div>
+		
+			<div class="intro" id="intro">
+				<div class="intro_col1" id="intro_text">
+					<h2>
+						Welcome to Ethelect.com
+					</h2>On Ethelect you can collaboratively write lecture notes, browse previous classes and get answers to any questions from people you study with.
+				</div>
+				<div class="intro_col2" id="intro_vid">
+						<object width="320" height="260">
+							<param name="movie" value="http://www.youtube-nocookie.com/v/NDfew0YcDTo?fs=1&hl=en_US&rel=0"></param>
+							<param name="allowFullScreen" value="false"></param>
+							<param name="allowscriptaccess" value="always"></param>
+							<embed src="http://www.youtube-nocookie.com/v/NDfew0YcDTo?fs=1&hl=en_US&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="260"></embed>
+						</object>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+		
+			
+			<div class="container" id="container">
+				<div id="active_course" class="column_wrapper">
+					<div id="active_course_header" class="box_header">
+						Currently Active
+					</div>
+					<div id="active_course_contents" class="box_contents">
+						<a href="/ep?padid=intjava_5">Introduction to Java, lecture #5</a>
+					</div>
+				</div>
+				
+				<div id="q_and_a" class="column_wrapper">
+					<div id="q_and_a_course_header" class="box_header">
+						Q&A
+					</div>
+					<div id="q_and_a_course_contents" class="box_contents">
+						There are <a href="#">5 new answers</a> in your registered courses 
+					</div>
+				</div>
+				
+				<div id="sponsored" class="column_wrapper">
+					<div id="sponsored_header" class="box_header">
+						Sponsored Contents
+					</div>
+					<div id="sponsored_contents" class="box_contents">
+						Need help in Java? Professional Java developer at your service, <b>contact: <a href="mailto://javaguru@gmail.com">javaguru@gmail.com</mailto></b>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</body>
+</html>
