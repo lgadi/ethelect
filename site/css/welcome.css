@@ -2,6 +2,17 @@ body {
 	background-color:#EEEEEE;
 }
 
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 0.83em 0px;
+	margin-top: 0.83em;
+	margin-right: 0px;
+	margin-bottom: 0.83em;
+	margin-left: 0px;
+
+	
+}
 .intro {
 	background-color:#2222CC;
 	color:white;

@@ -37,7 +37,7 @@ function render_main() {
   if (request.path == '/ep/') {
     response.redirect('/');
   }
-  renderFramed('main/home.ejs', {
+  renderFramed('main/welcome.ejs', {
     newFromEtherpad: blogcontrol.render_new_from_etherpad()
   });
   return true;
